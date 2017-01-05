@@ -47,7 +47,7 @@ function LunchCheckController($scope){
         var arr=[];
         
         for(var i=0;i<items.length;i++){
-            if(items[i] !='')
+            if(items[i].trim() !='')
                 arr.push(items[i]);
         }
         return arr.length;
